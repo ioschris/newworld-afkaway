@@ -570,6 +570,7 @@ namespace New_World___AFK_Away
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New World - AFK Away";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Main_KeyUp);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);

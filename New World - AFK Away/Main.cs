@@ -144,5 +144,17 @@ namespace New_World___AFK_Away
         {
             Process.Start("https://github.com/ioschris/newworld-afkaway");
         }
+
+        private void Main_KeyUp(object sender, KeyEventArgs e)
+        {
+            string hotkey = Properties.Settings.Default.Hotkey;
+            if (e.KeyCode.ToString() == hotkey)
+            {
+                if (btnStart.Enabled)
+                    btnStart.PerformClick();
+                else
+                    btnStop.PerformClick();
+            }
+        }
     }
 }
