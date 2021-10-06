@@ -1,0 +1,10 @@
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\bin\Debug\New World - AFK Away.exe.config
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\bin\Debug\New World - AFK Away.exe
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\bin\Debug\New World - AFK Away.pdb
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New World - AFK Away.csprojAssemblyReference.cache
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New_World___AFK_Away.Main.resources
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New_World___AFK_Away.Properties.Resources.resources
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New World - AFK Away.csproj.GenerateResource.cache
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New World - AFK Away.csproj.CoreCompileInputs.cache
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New World - AFK Away.exe
+C:\Users\crhar\OneDrive\Documents\Visual Studio 2019\Projects\New World - AFK Away\New World - AFK Away\obj\Debug\New World - AFK Away.pdb
