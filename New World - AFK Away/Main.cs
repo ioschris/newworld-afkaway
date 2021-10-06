@@ -1,6 +1,7 @@
 ﻿using New_World___AFK_Away.Classes;
 using System;
 using System.Configuration;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -112,7 +113,7 @@ namespace New_World___AFK_Away
 
         private void tbSettingsHotkey_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode >= Keys.F1 && e.KeyCode <= Keys.F24)
+            if (e.KeyCode >= Keys.F1 && e.KeyCode <= Keys.F12)
             {
                 tbSettingsHotkey.Text = e.KeyCode.ToString();
                 tbSettingsHotkey.Enabled = false;
@@ -123,7 +124,7 @@ namespace New_World___AFK_Away
             }
             else
             {
-                MessageBox.Show("Please only use function keys as a hot key! (F1-F24)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please only use function keys as a hot key! (F1-F12)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 listenForHotkey();
             }
         }
@@ -136,7 +137,12 @@ namespace New_World___AFK_Away
 
         private void btnInstructions_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("How To Use:/n/n");
+            MessageBox.Show("How To Use:\n\n1.) Choose your time interval.\n2.) Select your click type.\n3.) Select whether you want it to repeat continuously or a specific number of times.\n4.) Click Start or use your hotkey.\n5.) Click back into New World and walk away!", "AFK Away - Instructions", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void llbGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/ioschris/newworld-afkaway");
         }
     }
 }

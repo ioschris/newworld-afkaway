@@ -150,9 +150,9 @@ namespace New_World___AFK_Away
             // btnStop
             // 
             this.btnStop.Enabled = false;
-            this.btnStop.Location = new System.Drawing.Point(223, 223);
+            this.btnStop.Location = new System.Drawing.Point(225, 217);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(192, 23);
+            this.btnStop.Size = new System.Drawing.Size(209, 23);
             this.btnStop.TabIndex = 11;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -160,9 +160,9 @@ namespace New_World___AFK_Away
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(7, 223);
+            this.btnStart.Location = new System.Drawing.Point(7, 217);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(192, 23);
+            this.btnStart.Size = new System.Drawing.Size(209, 23);
             this.btnStart.TabIndex = 10;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -506,6 +506,7 @@ namespace New_World___AFK_Away
             this.llbGitHub.TabIndex = 5;
             this.llbGitHub.TabStop = true;
             this.llbGitHub.Text = "GitHub";
+            this.llbGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbGitHub_LinkClicked);
             // 
             // lbAboutSource
             // 
