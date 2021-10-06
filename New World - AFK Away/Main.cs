@@ -133,5 +133,10 @@ namespace New_World___AFK_Away
             btnStart.Text = $"Start ({Properties.Settings.Default.Hotkey})";
             btnStop.Text = $"Stop ({Properties.Settings.Default.Hotkey})";
         }
+
+        private void btnInstructions_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("How To Use:/n/n");
+        }
     }
 }

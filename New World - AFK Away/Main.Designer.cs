@@ -486,6 +486,7 @@ namespace New_World___AFK_Away
             this.btnInstructions.TabIndex = 7;
             this.btnInstructions.Text = "Instructions";
             this.btnInstructions.UseVisualStyleBackColor = true;
+            this.btnInstructions.Click += new System.EventHandler(this.btnInstructions_Click);
             // 
             // lbAboutEmail
             // 
