@@ -34,5 +34,17 @@ namespace New_World___AFK_Away.Properties {
                 this["Hotkey"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int HotkeyInt {
+            get {
+                return ((int)(this["HotkeyInt"]));
+            }
+            set {
+                this["HotkeyInt"] = value;
+            }
+        }
     }
 }

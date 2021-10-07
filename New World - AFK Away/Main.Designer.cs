@@ -74,6 +74,7 @@ namespace New_World___AFK_Away
             this.lbAboutVersion = new System.Windows.Forms.Label();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.lbAboutTitle = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpClicker.SuspendLayout();
@@ -266,7 +267,8 @@ namespace New_World___AFK_Away
             "Double Left Click",
             "WASD Pattern",
             "WASD + Single Left Click",
-            "WASD + Double Left Click"});
+            "WASD + Double Left Click",
+            "In-Game UI Interaction"});
             this.cbType.Location = new System.Drawing.Point(19, 44);
             this.cbType.Name = "cbType";
             this.cbType.Size = new System.Drawing.Size(169, 21);
@@ -462,6 +464,7 @@ namespace New_World___AFK_Away
             // 
             // tpAbout
             // 
+            this.tpAbout.Controls.Add(this.btnUpdate);
             this.tpAbout.Controls.Add(this.btnInstructions);
             this.tpAbout.Controls.Add(this.lbAboutEmail);
             this.tpAbout.Controls.Add(this.llbGitHub);
@@ -480,9 +483,9 @@ namespace New_World___AFK_Away
             // 
             // btnInstructions
             // 
-            this.btnInstructions.Location = new System.Drawing.Point(231, 185);
+            this.btnInstructions.Location = new System.Drawing.Point(228, 175);
             this.btnInstructions.Name = "btnInstructions";
-            this.btnInstructions.Size = new System.Drawing.Size(129, 23);
+            this.btnInstructions.Size = new System.Drawing.Size(133, 23);
             this.btnInstructions.TabIndex = 7;
             this.btnInstructions.Text = "Instructions";
             this.btnInstructions.UseVisualStyleBackColor = true;
@@ -555,6 +558,15 @@ namespace New_World___AFK_Away
             this.lbAboutTitle.TabIndex = 0;
             this.lbAboutTitle.Text = "New World - AFK Away";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(228, 204);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(133, 23);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.Text = "Check for Updates";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,7 +582,6 @@ namespace New_World___AFK_Away
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New World - AFK Away";
             this.Load += new System.EventHandler(this.Main_Load);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Main_KeyUp);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -640,6 +651,7 @@ namespace New_World___AFK_Away
         private System.Windows.Forms.Label lbDefault;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInstructions;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 

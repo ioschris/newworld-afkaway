@@ -33,8 +33,11 @@ namespace New_World___AFK_Away.Classes
         public void wasd()
         {
             SendKeys.Send(Keys.W.ToString());
+            System.Threading.Thread.Sleep(1000);
             SendKeys.Send(Keys.A.ToString());
+            System.Threading.Thread.Sleep(1000);
             SendKeys.Send(Keys.S.ToString());
+            System.Threading.Thread.Sleep(1000);
             SendKeys.Send(Keys.D.ToString());
         }
 
@@ -48,6 +51,17 @@ namespace New_World___AFK_Away.Classes
         {
             wasd();
             doubleLeftClick();
+        }
+
+        public void uiInteraction()
+        {
+            SendKeys.Send(Keys.M.ToString());
+            System.Threading.Thread.Sleep(1000);
+            SendKeys.Send(Keys.K.ToString());
+            System.Threading.Thread.Sleep(1000);
+            SendKeys.Send(Keys.J.ToString());
+            System.Threading.Thread.Sleep(1000);
+            SendKeys.Send(Keys.Escape.ToString());
         }
 
         public void selectedType(int i)
@@ -68,6 +82,9 @@ namespace New_World___AFK_Away.Classes
                     break;
                 case 4:
                     wasdDouble();
+                    break;
+                case 5:
+                    uiInteraction();
                     break;
             }
         }
