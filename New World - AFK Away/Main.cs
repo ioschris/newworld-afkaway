@@ -78,6 +78,8 @@ namespace New_World___AFK_Away
             btnStop.Text = $"Stop ({hotkey})";
 
             rbRepeatUntilStop.Checked = true;
+            rbSetInterval.Checked = true;
+            rbSetType.Checked = true;
 
             //Check if New World is running or not and update the UI accordingly
             if (newWorld.checkGameState() == "Running")
