@@ -26,9 +26,7 @@ namespace New_World___AFK_Away.Classes
         {
             Random r = new Random();
             int rInt = r.Next(1000, 60000);
-            Console.WriteLine(rInt);
-
-            return rInt;
+            return 1;
         }
     }
 }

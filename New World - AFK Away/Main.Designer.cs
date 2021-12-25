@@ -46,13 +46,9 @@ namespace New_World___AFK_Away
             this.rbRepeatUntilStop = new System.Windows.Forms.RadioButton();
             this.rbRepeat = new System.Windows.Forms.RadioButton();
             this.gbOptions = new System.Windows.Forms.GroupBox();
-            this.rbRandomType = new System.Windows.Forms.RadioButton();
-            this.rbSetType = new System.Windows.Forms.RadioButton();
             this.cbType = new System.Windows.Forms.ComboBox();
             this.lbOptions = new System.Windows.Forms.Label();
             this.gbInterval = new System.Windows.Forms.GroupBox();
-            this.rbRandomInterval = new System.Windows.Forms.RadioButton();
-            this.rbSetInterval = new System.Windows.Forms.RadioButton();
             this.numSeconds = new System.Windows.Forms.NumericUpDown();
             this.numMinutes = new System.Windows.Forms.NumericUpDown();
             this.numHours = new System.Windows.Forms.NumericUpDown();
@@ -70,7 +66,6 @@ namespace New_World___AFK_Away
             this.lbSettingsHotkey = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tpAbout = new System.Windows.Forms.TabPage();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInstructions = new System.Windows.Forms.Button();
             this.lbAboutEmail = new System.Windows.Forms.Label();
             this.llbGitHub = new System.Windows.Forms.LinkLabel();
@@ -79,6 +74,11 @@ namespace New_World___AFK_Away
             this.lbAboutVersion = new System.Windows.Forms.Label();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.lbAboutTitle = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.rbSetInterval = new System.Windows.Forms.RadioButton();
+            this.rbRandomInterval = new System.Windows.Forms.RadioButton();
+            this.rbRandomType = new System.Windows.Forms.RadioButton();
+            this.rbSetType = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpClicker.SuspendLayout();
@@ -265,30 +265,6 @@ namespace New_World___AFK_Away
             this.gbOptions.TabStop = false;
             this.gbOptions.Text = "Options";
             // 
-            // rbRandomType
-            // 
-            this.rbRandomType.AutoSize = true;
-            this.rbRandomType.Location = new System.Drawing.Point(99, 81);
-            this.rbRandomType.Name = "rbRandomType";
-            this.rbRandomType.Size = new System.Drawing.Size(92, 17);
-            this.rbRandomType.TabIndex = 12;
-            this.rbRandomType.TabStop = true;
-            this.rbRandomType.Text = "Random Type";
-            this.rbRandomType.UseVisualStyleBackColor = true;
-            this.rbRandomType.CheckedChanged += new System.EventHandler(this.rbRandomType_CheckedChanged);
-            // 
-            // rbSetType
-            // 
-            this.rbSetType.AutoSize = true;
-            this.rbSetType.Location = new System.Drawing.Point(21, 81);
-            this.rbSetType.Name = "rbSetType";
-            this.rbSetType.Size = new System.Drawing.Size(68, 17);
-            this.rbSetType.TabIndex = 11;
-            this.rbSetType.TabStop = true;
-            this.rbSetType.Text = "Set Type";
-            this.rbSetType.UseVisualStyleBackColor = true;
-            this.rbSetType.CheckedChanged += new System.EventHandler(this.rbSetType_CheckedChanged);
-            // 
             // cbType
             // 
             this.cbType.FormattingEnabled = true;
@@ -329,30 +305,6 @@ namespace New_World___AFK_Away
             this.gbInterval.TabIndex = 7;
             this.gbInterval.TabStop = false;
             this.gbInterval.Text = "Interval";
-            // 
-            // rbRandomInterval
-            // 
-            this.rbRandomInterval.AutoSize = true;
-            this.rbRandomInterval.Location = new System.Drawing.Point(207, 62);
-            this.rbRandomInterval.Name = "rbRandomInterval";
-            this.rbRandomInterval.Size = new System.Drawing.Size(103, 17);
-            this.rbRandomInterval.TabIndex = 10;
-            this.rbRandomInterval.TabStop = true;
-            this.rbRandomInterval.Text = "Random Interval";
-            this.rbRandomInterval.UseVisualStyleBackColor = true;
-            this.rbRandomInterval.CheckedChanged += new System.EventHandler(this.rbRandomInterval_CheckedChanged);
-            // 
-            // rbSetInterval
-            // 
-            this.rbSetInterval.AutoSize = true;
-            this.rbSetInterval.Location = new System.Drawing.Point(119, 62);
-            this.rbSetInterval.Name = "rbSetInterval";
-            this.rbSetInterval.Size = new System.Drawing.Size(79, 17);
-            this.rbSetInterval.TabIndex = 9;
-            this.rbSetInterval.TabStop = true;
-            this.rbSetInterval.Text = "Set Interval";
-            this.rbSetInterval.UseVisualStyleBackColor = true;
-            this.rbSetInterval.CheckedChanged += new System.EventHandler(this.rbSetInterval_CheckedChanged);
             // 
             // numSeconds
             // 
@@ -423,7 +375,7 @@ namespace New_World___AFK_Away
             this.tpResources.Location = new System.Drawing.Point(4, 22);
             this.tpResources.Name = "tpResources";
             this.tpResources.Padding = new System.Windows.Forms.Padding(3);
-            this.tpResources.Size = new System.Drawing.Size(440, 276);
+            this.tpResources.Size = new System.Drawing.Size(440, 254);
             this.tpResources.TabIndex = 1;
             this.tpResources.Text = "New World Resources";
             this.tpResources.UseVisualStyleBackColor = true;
@@ -471,7 +423,7 @@ namespace New_World___AFK_Away
             this.tpSettings.Location = new System.Drawing.Point(4, 22);
             this.tpSettings.Name = "tpSettings";
             this.tpSettings.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSettings.Size = new System.Drawing.Size(440, 276);
+            this.tpSettings.Size = new System.Drawing.Size(440, 254);
             this.tpSettings.TabIndex = 2;
             this.tpSettings.Text = "Settings";
             this.tpSettings.UseVisualStyleBackColor = true;
@@ -536,15 +488,6 @@ namespace New_World___AFK_Away
             this.tpAbout.TabIndex = 3;
             this.tpAbout.Text = "About";
             this.tpAbout.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(233, 198);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(133, 23);
-            this.btnUpdate.TabIndex = 8;
-            this.btnUpdate.Text = "Check for Updates";
-            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnInstructions
             // 
@@ -622,6 +565,59 @@ namespace New_World___AFK_Away
             this.lbAboutTitle.Size = new System.Drawing.Size(228, 24);
             this.lbAboutTitle.TabIndex = 0;
             this.lbAboutTitle.Text = "New World - AFK Away";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(233, 198);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(133, 23);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.Text = "Check for Updates";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // rbSetInterval
+            // 
+            this.rbSetInterval.AutoSize = true;
+            this.rbSetInterval.Location = new System.Drawing.Point(119, 62);
+            this.rbSetInterval.Name = "rbSetInterval";
+            this.rbSetInterval.Size = new System.Drawing.Size(79, 17);
+            this.rbSetInterval.TabIndex = 9;
+            this.rbSetInterval.TabStop = true;
+            this.rbSetInterval.Text = "Set Interval";
+            this.rbSetInterval.UseVisualStyleBackColor = true;
+            // 
+            // rbRandomInterval
+            // 
+            this.rbRandomInterval.AutoSize = true;
+            this.rbRandomInterval.Location = new System.Drawing.Point(207, 62);
+            this.rbRandomInterval.Name = "rbRandomInterval";
+            this.rbRandomInterval.Size = new System.Drawing.Size(103, 17);
+            this.rbRandomInterval.TabIndex = 10;
+            this.rbRandomInterval.TabStop = true;
+            this.rbRandomInterval.Text = "Random Interval";
+            this.rbRandomInterval.UseVisualStyleBackColor = true;
+            // 
+            // rbRandomType
+            // 
+            this.rbRandomType.AutoSize = true;
+            this.rbRandomType.Location = new System.Drawing.Point(99, 81);
+            this.rbRandomType.Name = "rbRandomType";
+            this.rbRandomType.Size = new System.Drawing.Size(92, 17);
+            this.rbRandomType.TabIndex = 12;
+            this.rbRandomType.TabStop = true;
+            this.rbRandomType.Text = "Random Type";
+            this.rbRandomType.UseVisualStyleBackColor = true;
+            // 
+            // rbSetType
+            // 
+            this.rbSetType.AutoSize = true;
+            this.rbSetType.Location = new System.Drawing.Point(21, 81);
+            this.rbSetType.Name = "rbSetType";
+            this.rbSetType.Size = new System.Drawing.Size(68, 17);
+            this.rbSetType.TabIndex = 11;
+            this.rbSetType.TabStop = true;
+            this.rbSetType.Text = "Set Type";
+            this.rbSetType.UseVisualStyleBackColor = true;
             // 
             // Main
             // 

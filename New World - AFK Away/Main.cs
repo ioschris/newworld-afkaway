@@ -200,33 +200,5 @@ namespace New_World___AFK_Away
             }
             base.WndProc(ref m);
         }
-
-        private void rbSetInterval_CheckedChanged(object sender, EventArgs e)
-        {
-            //Update UI based on user preference
-            numHours.Enabled = true;
-            numMinutes.Enabled = true;
-            numSeconds.Enabled = true;
-        }
-
-        private void rbRandomInterval_CheckedChanged(object sender, EventArgs e)
-        {
-            //Update UI based on user preference
-            numHours.Enabled = false;
-            numMinutes.Enabled = false;
-            numSeconds.Enabled = false;
-        }
-
-        private void rbSetType_CheckedChanged(object sender, EventArgs e)
-        {
-            //Update UI based on user preference
-            cbType.Enabled = true;
-        }
-
-        private void rbRandomType_CheckedChanged(object sender, EventArgs e)
-        {
-            //Update UI based on user preference
-            cbType.Enabled = false;
-        }
     }
 }
