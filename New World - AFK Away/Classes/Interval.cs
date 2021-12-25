@@ -21,12 +21,5 @@ namespace New_World___AFK_Away.Classes
 
             return totalTimeInMilliseconds;
         }
-
-        public int getRandomInterval()
-        {
-            Random r = new Random();
-            int rInt = r.Next(1000, 60000);
-            return 1;
-        }
     }
 }

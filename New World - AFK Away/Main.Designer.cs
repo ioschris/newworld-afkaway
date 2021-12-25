@@ -75,10 +75,6 @@ namespace New_World___AFK_Away
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.lbAboutTitle = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.rbSetInterval = new System.Windows.Forms.RadioButton();
-            this.rbRandomInterval = new System.Windows.Forms.RadioButton();
-            this.rbRandomType = new System.Windows.Forms.RadioButton();
-            this.rbSetType = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tpClicker.SuspendLayout();
@@ -100,7 +96,7 @@ namespace New_World___AFK_Away
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lbGame,
             this.lbStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 317);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 306);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(473, 22);
             this.statusStrip1.TabIndex = 2;
@@ -133,7 +129,7 @@ namespace New_World___AFK_Away
             this.tabControl1.Location = new System.Drawing.Point(13, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(448, 302);
+            this.tabControl1.Size = new System.Drawing.Size(448, 280);
             this.tabControl1.TabIndex = 8;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -147,7 +143,7 @@ namespace New_World___AFK_Away
             this.tpClicker.Location = new System.Drawing.Point(4, 22);
             this.tpClicker.Name = "tpClicker";
             this.tpClicker.Padding = new System.Windows.Forms.Padding(3);
-            this.tpClicker.Size = new System.Drawing.Size(440, 276);
+            this.tpClicker.Size = new System.Drawing.Size(440, 254);
             this.tpClicker.TabIndex = 0;
             this.tpClicker.Text = "Auto-Clicker";
             this.tpClicker.UseVisualStyleBackColor = true;
@@ -155,7 +151,7 @@ namespace New_World___AFK_Away
             // btnStop
             // 
             this.btnStop.Enabled = false;
-            this.btnStop.Location = new System.Drawing.Point(225, 239);
+            this.btnStop.Location = new System.Drawing.Point(225, 217);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(209, 23);
             this.btnStop.TabIndex = 11;
@@ -165,7 +161,7 @@ namespace New_World___AFK_Away
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(7, 239);
+            this.btnStart.Location = new System.Drawing.Point(7, 217);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(209, 23);
             this.btnStart.TabIndex = 10;
@@ -180,9 +176,9 @@ namespace New_World___AFK_Away
             this.gbRepeat.Controls.Add(this.numRepeat);
             this.gbRepeat.Controls.Add(this.rbRepeatUntilStop);
             this.gbRepeat.Controls.Add(this.rbRepeat);
-            this.gbRepeat.Location = new System.Drawing.Point(225, 110);
+            this.gbRepeat.Location = new System.Drawing.Point(225, 106);
             this.gbRepeat.Name = "gbRepeat";
-            this.gbRepeat.Size = new System.Drawing.Size(210, 118);
+            this.gbRepeat.Size = new System.Drawing.Size(210, 100);
             this.gbRepeat.TabIndex = 9;
             this.gbRepeat.TabStop = false;
             this.gbRepeat.Text = "Repeat";
@@ -191,7 +187,7 @@ namespace New_World___AFK_Away
             // 
             this.lbDefault.AutoSize = true;
             this.lbDefault.ForeColor = System.Drawing.Color.Red;
-            this.lbDefault.Location = new System.Drawing.Point(144, 83);
+            this.lbDefault.Location = new System.Drawing.Point(144, 62);
             this.lbDefault.Name = "lbDefault";
             this.lbDefault.Size = new System.Drawing.Size(47, 13);
             this.lbDefault.TabIndex = 4;
@@ -200,7 +196,7 @@ namespace New_World___AFK_Away
             // lbRepeat
             // 
             this.lbRepeat.AutoSize = true;
-            this.lbRepeat.Location = new System.Drawing.Point(148, 51);
+            this.lbRepeat.Location = new System.Drawing.Point(148, 30);
             this.lbRepeat.Name = "lbRepeat";
             this.lbRepeat.Size = new System.Drawing.Size(41, 13);
             this.lbRepeat.TabIndex = 3;
@@ -209,7 +205,7 @@ namespace New_World___AFK_Away
             // numRepeat
             // 
             this.numRepeat.Enabled = false;
-            this.numRepeat.Location = new System.Drawing.Point(89, 47);
+            this.numRepeat.Location = new System.Drawing.Point(89, 26);
             this.numRepeat.Maximum = new decimal(new int[] {
             420,
             0,
@@ -232,7 +228,7 @@ namespace New_World___AFK_Away
             // rbRepeatUntilStop
             // 
             this.rbRepeatUntilStop.AutoSize = true;
-            this.rbRepeatUntilStop.Location = new System.Drawing.Point(20, 81);
+            this.rbRepeatUntilStop.Location = new System.Drawing.Point(20, 60);
             this.rbRepeatUntilStop.Name = "rbRepeatUntilStop";
             this.rbRepeatUntilStop.Size = new System.Drawing.Size(127, 17);
             this.rbRepeatUntilStop.TabIndex = 1;
@@ -243,7 +239,7 @@ namespace New_World___AFK_Away
             // rbRepeat
             // 
             this.rbRepeat.AutoSize = true;
-            this.rbRepeat.Location = new System.Drawing.Point(20, 48);
+            this.rbRepeat.Location = new System.Drawing.Point(20, 27);
             this.rbRepeat.Name = "rbRepeat";
             this.rbRepeat.Size = new System.Drawing.Size(63, 17);
             this.rbRepeat.TabIndex = 0;
@@ -254,13 +250,11 @@ namespace New_World___AFK_Away
             // 
             // gbOptions
             // 
-            this.gbOptions.Controls.Add(this.rbRandomType);
-            this.gbOptions.Controls.Add(this.rbSetType);
             this.gbOptions.Controls.Add(this.cbType);
             this.gbOptions.Controls.Add(this.lbOptions);
-            this.gbOptions.Location = new System.Drawing.Point(7, 110);
+            this.gbOptions.Location = new System.Drawing.Point(7, 106);
             this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(209, 118);
+            this.gbOptions.Size = new System.Drawing.Size(209, 100);
             this.gbOptions.TabIndex = 8;
             this.gbOptions.TabStop = false;
             this.gbOptions.Text = "Options";
@@ -291,8 +285,6 @@ namespace New_World___AFK_Away
             // 
             // gbInterval
             // 
-            this.gbInterval.Controls.Add(this.rbRandomInterval);
-            this.gbInterval.Controls.Add(this.rbSetInterval);
             this.gbInterval.Controls.Add(this.numSeconds);
             this.gbInterval.Controls.Add(this.numMinutes);
             this.gbInterval.Controls.Add(this.numHours);
@@ -301,14 +293,14 @@ namespace New_World___AFK_Away
             this.gbInterval.Controls.Add(this.lbHours);
             this.gbInterval.Location = new System.Drawing.Point(6, 9);
             this.gbInterval.Name = "gbInterval";
-            this.gbInterval.Size = new System.Drawing.Size(429, 95);
+            this.gbInterval.Size = new System.Drawing.Size(429, 90);
             this.gbInterval.TabIndex = 7;
             this.gbInterval.TabStop = false;
             this.gbInterval.Text = "Interval";
             // 
             // numSeconds
             // 
-            this.numSeconds.Location = new System.Drawing.Point(275, 31);
+            this.numSeconds.Location = new System.Drawing.Point(275, 35);
             this.numSeconds.Maximum = new decimal(new int[] {
             59,
             0,
@@ -320,7 +312,7 @@ namespace New_World___AFK_Away
             // 
             // numMinutes
             // 
-            this.numMinutes.Location = new System.Drawing.Point(155, 31);
+            this.numMinutes.Location = new System.Drawing.Point(155, 35);
             this.numMinutes.Maximum = new decimal(new int[] {
             59,
             0,
@@ -332,7 +324,7 @@ namespace New_World___AFK_Away
             // 
             // numHours
             // 
-            this.numHours.Location = new System.Drawing.Point(44, 31);
+            this.numHours.Location = new System.Drawing.Point(44, 35);
             this.numHours.Maximum = new decimal(new int[] {
             24,
             0,
@@ -345,7 +337,7 @@ namespace New_World___AFK_Away
             // lbSeconds
             // 
             this.lbSeconds.AutoSize = true;
-            this.lbSeconds.Location = new System.Drawing.Point(336, 33);
+            this.lbSeconds.Location = new System.Drawing.Point(336, 37);
             this.lbSeconds.Name = "lbSeconds";
             this.lbSeconds.Size = new System.Drawing.Size(55, 13);
             this.lbSeconds.TabIndex = 5;
@@ -354,7 +346,7 @@ namespace New_World___AFK_Away
             // lbMinutes
             // 
             this.lbMinutes.AutoSize = true;
-            this.lbMinutes.Location = new System.Drawing.Point(216, 33);
+            this.lbMinutes.Location = new System.Drawing.Point(216, 37);
             this.lbMinutes.Name = "lbMinutes";
             this.lbMinutes.Size = new System.Drawing.Size(50, 13);
             this.lbMinutes.TabIndex = 4;
@@ -363,7 +355,7 @@ namespace New_World___AFK_Away
             // lbHours
             // 
             this.lbHours.AutoSize = true;
-            this.lbHours.Location = new System.Drawing.Point(105, 33);
+            this.lbHours.Location = new System.Drawing.Point(105, 37);
             this.lbHours.Name = "lbHours";
             this.lbHours.Size = new System.Drawing.Size(41, 13);
             this.lbHours.TabIndex = 3;
@@ -484,14 +476,14 @@ namespace New_World___AFK_Away
             this.tpAbout.Location = new System.Drawing.Point(4, 22);
             this.tpAbout.Name = "tpAbout";
             this.tpAbout.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAbout.Size = new System.Drawing.Size(440, 276);
+            this.tpAbout.Size = new System.Drawing.Size(440, 254);
             this.tpAbout.TabIndex = 3;
             this.tpAbout.Text = "About";
             this.tpAbout.UseVisualStyleBackColor = true;
             // 
             // btnInstructions
             // 
-            this.btnInstructions.Location = new System.Drawing.Point(233, 169);
+            this.btnInstructions.Location = new System.Drawing.Point(228, 175);
             this.btnInstructions.Name = "btnInstructions";
             this.btnInstructions.Size = new System.Drawing.Size(133, 23);
             this.btnInstructions.TabIndex = 7;
@@ -502,7 +494,7 @@ namespace New_World___AFK_Away
             // lbAboutEmail
             // 
             this.lbAboutEmail.AutoSize = true;
-            this.lbAboutEmail.Location = new System.Drawing.Point(208, 142);
+            this.lbAboutEmail.Location = new System.Drawing.Point(205, 148);
             this.lbAboutEmail.Name = "lbAboutEmail";
             this.lbAboutEmail.Size = new System.Drawing.Size(189, 13);
             this.lbAboutEmail.TabIndex = 6;
@@ -511,7 +503,7 @@ namespace New_World___AFK_Away
             // llbGitHub
             // 
             this.llbGitHub.AutoSize = true;
-            this.llbGitHub.Location = new System.Drawing.Point(299, 104);
+            this.llbGitHub.Location = new System.Drawing.Point(299, 110);
             this.llbGitHub.Name = "llbGitHub";
             this.llbGitHub.Size = new System.Drawing.Size(40, 13);
             this.llbGitHub.TabIndex = 5;
@@ -522,7 +514,7 @@ namespace New_World___AFK_Away
             // lbAboutSource
             // 
             this.lbAboutSource.AutoSize = true;
-            this.lbAboutSource.Location = new System.Drawing.Point(254, 104);
+            this.lbAboutSource.Location = new System.Drawing.Point(254, 110);
             this.lbAboutSource.Name = "lbAboutSource";
             this.lbAboutSource.Size = new System.Drawing.Size(44, 13);
             this.lbAboutSource.TabIndex = 4;
@@ -531,7 +523,7 @@ namespace New_World___AFK_Away
             // lbAboutAuthor
             // 
             this.lbAboutAuthor.AutoSize = true;
-            this.lbAboutAuthor.Location = new System.Drawing.Point(249, 88);
+            this.lbAboutAuthor.Location = new System.Drawing.Point(249, 94);
             this.lbAboutAuthor.Name = "lbAboutAuthor";
             this.lbAboutAuthor.Size = new System.Drawing.Size(97, 13);
             this.lbAboutAuthor.TabIndex = 3;
@@ -540,7 +532,7 @@ namespace New_World___AFK_Away
             // lbAboutVersion
             // 
             this.lbAboutVersion.AutoSize = true;
-            this.lbAboutVersion.Location = new System.Drawing.Point(258, 72);
+            this.lbAboutVersion.Location = new System.Drawing.Point(258, 78);
             this.lbAboutVersion.Name = "lbAboutVersion";
             this.lbAboutVersion.Size = new System.Drawing.Size(48, 13);
             this.lbAboutVersion.TabIndex = 2;
@@ -560,7 +552,7 @@ namespace New_World___AFK_Away
             // 
             this.lbAboutTitle.AutoSize = true;
             this.lbAboutTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAboutTitle.Location = new System.Drawing.Point(190, 41);
+            this.lbAboutTitle.Location = new System.Drawing.Point(190, 47);
             this.lbAboutTitle.Name = "lbAboutTitle";
             this.lbAboutTitle.Size = new System.Drawing.Size(228, 24);
             this.lbAboutTitle.TabIndex = 0;
@@ -568,62 +560,18 @@ namespace New_World___AFK_Away
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(233, 198);
+            this.btnUpdate.Location = new System.Drawing.Point(228, 204);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(133, 23);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Check for Updates";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // rbSetInterval
-            // 
-            this.rbSetInterval.AutoSize = true;
-            this.rbSetInterval.Location = new System.Drawing.Point(119, 62);
-            this.rbSetInterval.Name = "rbSetInterval";
-            this.rbSetInterval.Size = new System.Drawing.Size(79, 17);
-            this.rbSetInterval.TabIndex = 9;
-            this.rbSetInterval.TabStop = true;
-            this.rbSetInterval.Text = "Set Interval";
-            this.rbSetInterval.UseVisualStyleBackColor = true;
-            // 
-            // rbRandomInterval
-            // 
-            this.rbRandomInterval.AutoSize = true;
-            this.rbRandomInterval.Location = new System.Drawing.Point(207, 62);
-            this.rbRandomInterval.Name = "rbRandomInterval";
-            this.rbRandomInterval.Size = new System.Drawing.Size(103, 17);
-            this.rbRandomInterval.TabIndex = 10;
-            this.rbRandomInterval.TabStop = true;
-            this.rbRandomInterval.Text = "Random Interval";
-            this.rbRandomInterval.UseVisualStyleBackColor = true;
-            // 
-            // rbRandomType
-            // 
-            this.rbRandomType.AutoSize = true;
-            this.rbRandomType.Location = new System.Drawing.Point(99, 81);
-            this.rbRandomType.Name = "rbRandomType";
-            this.rbRandomType.Size = new System.Drawing.Size(92, 17);
-            this.rbRandomType.TabIndex = 12;
-            this.rbRandomType.TabStop = true;
-            this.rbRandomType.Text = "Random Type";
-            this.rbRandomType.UseVisualStyleBackColor = true;
-            // 
-            // rbSetType
-            // 
-            this.rbSetType.AutoSize = true;
-            this.rbSetType.Location = new System.Drawing.Point(21, 81);
-            this.rbSetType.Name = "rbSetType";
-            this.rbSetType.Size = new System.Drawing.Size(68, 17);
-            this.rbSetType.TabIndex = 11;
-            this.rbSetType.TabStop = true;
-            this.rbSetType.Text = "Set Type";
-            this.rbSetType.UseVisualStyleBackColor = true;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 339);
+            this.ClientSize = new System.Drawing.Size(473, 328);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -704,10 +652,6 @@ namespace New_World___AFK_Away
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInstructions;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.RadioButton rbRandomInterval;
-        private System.Windows.Forms.RadioButton rbSetInterval;
-        private System.Windows.Forms.RadioButton rbRandomType;
-        private System.Windows.Forms.RadioButton rbSetType;
     }
 }
 
